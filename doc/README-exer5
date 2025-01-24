@@ -1,0 +1,55 @@
+
+  Deadline: 2024/Oct/21, 00:05am
+
+  Note: 
+    For this exercise, the content of SYMTAB should be read into a table 
+    in memory, and the searching for symbols should be done on that table, 
+    not searching the file SYMTAB every time.
+
+  **********************************************************
+  ***  Searching symbols in SYMTAB will get 0 points.   ****
+  **********************************************************
+
+  This exercise, pass 2, completes the assembler.
+
+  The input of this exercise are two files, SYMTAB and INTFILE, 
+  which are the output of the exer4.
+
+  The output of this exercise, the object file, should be printed to 
+  the stdout. You may redirect it to a file. See examples below.
+
+  Your program should be named exer5.cpp, exer5.cc or exer5.c.
+
+  Assuming you have written exer4.cpp and exer5.cpp, you may test your 
+  programs as follows.
+
+    $ g++ -o pass1 exer4.cpp         # compile pass1
+                                     #   the executable is named pass1
+    $ g++ -o pass2 exer5.cpp         # compile pass2
+                                     #   the executable is named pass2
+    $ cat SAMPLE-split-1 | ./pass1   # run pass1; SYMTAB and INTFILE generated
+    $ ./pass2                        # run pass2; the output is shown on
+    H....                            #    the stdout, that is, the screen
+    T....
+    ....
+
+    $ ./pass2 > DEVF2                # run pass2 again, but this time the
+                                     #   output is redirected to a file
+    $ ./sim                          # run the simulator to test it
+    ....                             # Other DEV?? files should be prepared.
+    $
+
+
+  If you do not have an runnable exer4, you can still test your program.
+
+    $ cp SAMPLE-SYMTAB-1  SYMTAB     # prepare SYMTAB and INTFILE
+    $ cp SAMPLE-INTFILE-1 INTFILE    #   from SAMPLE 1
+    $ ./pass2                        # run your pass2
+    ......
+    $
+
+
+  Note: There is no SAMPLE output for this exercise since the object
+        file is not unique and you can just verify your object file
+        with the simulator. (That is, run it!)
+
